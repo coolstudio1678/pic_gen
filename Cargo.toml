@@ -1,0 +1,18 @@
+[package]
+name = "手工筛选"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# chrono = "0.4.38"
+polars = { version = "0.46.0", features = ["lazy","strings","csv","rolling_window","cum_agg","polars-io","ewma"] }
+egui = "0.31.0"
+egui_plot ="0.31.0"
+eframe = {version = "0.31.0" ,features = ["persistence"]}
+chrono = "0.4.24"
+image = { version= "0.25.5", features = ["png"] }
+
+[package.metadata.windows]
+windows_subsystem = "windows"
